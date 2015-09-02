@@ -11,3 +11,9 @@ Template.easyNotifications.rendered = function() {
     Notifications.collection.remove(notification._id);
   }, 24 * 60 * 60 * 1000);
 }
+
+Template.easyNotifications.events({
+  'click .close': function () {
+    Notifications.collection.remove(this._id);
+  }
+});
