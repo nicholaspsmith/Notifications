@@ -1,8 +1,12 @@
-Notifications = {
+window.Notifications = {
   // Local (client-only) collection
   collection: new Mongo.Collection(null),
 
-  push: function(message) {
-    Notifications.collection.insert({message: message, seen: false})
+  push: function(data) {
+    // types:
+    // success
+    // warning
+    // danger
+    Notifications.collection.insert({message: data.message, type: data.type})
   }
 };
