@@ -19,7 +19,7 @@ minifiers@1.1.5
 minimongo@1.0.8
 mongo@1.1.0
 mongo-livedata@1.0.8
-npsjsdev:easy-notifications@0.0.1
+npsjsdev:easy-notifications@0.0.2
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 random@1.0.3
