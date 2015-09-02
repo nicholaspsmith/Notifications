@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'npsjsdev:notifications',
+  name: 'npsjsdev:easy-notifications',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: 'A package to display notifications for important events.',
@@ -12,11 +12,12 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
-  api.addFiles('notifications.js');
+  api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
+  api.addFiles(['notifications.js','notification_window.html','notification_window.js'], 'client');
 });
 
 Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('npsjsdev:notifications');
-  api.addFiles('notifications-tests.js');
+  api.use('npsjsdev:easy-notifications', 'client');
+  api.use(['tinytest','test-helpers'], 'client');
+  api.addFiles('notifications-tests.js', 'client');
 });
