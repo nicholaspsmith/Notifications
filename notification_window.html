@@ -1,0 +1,21 @@
+<template name="easyNotifications">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Notifications</h3>
+    </div>
+    <div class="panel-body">
+      <div class="alerts">
+        {{#each notifications}}
+          {{> singleNotification}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="singleNotification">
+  <div class="alert alert-{{type}}" role="alert">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{message}}
+  </div>
+</template>
