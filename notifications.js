@@ -3,10 +3,6 @@ window.Notifications = {
   collection: new Mongo.Collection(null),
 
   push: function(data) {
-    // types:
-    // success
-    // warning
-    // danger
     Notifications.collection.insert({message: data.message, type: data.type})
   }
 };
