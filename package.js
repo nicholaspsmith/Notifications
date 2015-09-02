@@ -15,9 +15,3 @@ Package.onUse(function(api) {
   api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
   api.addFiles(['notifications.js','notification_window.html','notification_window.js'], 'client');
 });
-
-Package.onTest(function(api) {
-  api.use('npsjsdev:easy-notifications', 'client');
-  api.use(['tinytest','test-helpers'], 'client');
-  api.addFiles('notifications-tests.js', 'client');
-});
