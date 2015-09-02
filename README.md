@@ -1,6 +1,9 @@
 Easy Notifications for Meteor
 ====================
 
+Requirements:
+[Bootstrap](https://atmospherejs.com/twbs/bootstrap)
+
 A package for creating a window that shows dismissable notifications.
 
 To add a notification
