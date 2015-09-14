@@ -1,6 +1,9 @@
 Easy Notifications for Meteor
 ====================
 
+@TODO: Use a server-side collection for notifications so that notifications are persistent.
+note: this is not ready for use yet
+
 Requirements:
 [Bootstrap](https://atmospherejs.com/twbs/bootstrap)
 
